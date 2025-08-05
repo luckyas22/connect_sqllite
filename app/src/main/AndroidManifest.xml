@@ -13,7 +13,7 @@
         android:theme="@style/Theme.SqlliteConnection">
 
         <activity
-            android:name=".CustomersActivity"
+            android:name=".LoginActivity"
             android:exported="true">
 
         </activity>
@@ -23,7 +23,7 @@
             android:exported="true">
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".CustomersActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
