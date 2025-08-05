@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val tvWelcome = findViewById<TextView>(R.id.tvWelcome)
         val btnLogout = findViewById<Button>(R.id.btnLogout)
-        // Ambil username dari intent
+        // Ambil username dari intent 1
         val username = intent.getStringExtra("username") ?: "User"
         tvWelcome.text = "Selamat Datang, $username"
         btnLogout.setOnClickListener {
