@@ -18,9 +18,18 @@ class MainActivity : AppCompatActivity() {
 
         val tvWelcome = findViewById<TextView>(R.id.tvWelcome)
         val btnLogout = findViewById<Button>(R.id.btnLogout)
+        val btnCustomer = findViewById<Button>(R.id.btnCustomer)
         // Ambil username dari intent 1
         val username = intent.getStringExtra("username") ?: "User"
         tvWelcome.text = "Selamat Datang, $username"
+        btnCustomer.setOnClickListener {
+
+            val intent = Intent(this, CustomersActivity::class.java)
+            startActivity(intent)
+
+            // Tutup MainActivity agar tidak bisa kembali dengan tombol back
+            finish()
+        }
         btnLogout.setOnClickListener {
             Toast.makeText(this, "Berhasil logout", Toast.LENGTH_SHORT).show()
 

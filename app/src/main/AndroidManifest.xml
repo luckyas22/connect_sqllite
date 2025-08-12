@@ -10,13 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SqlliteConnection">
-
         <activity
             android:name=".CustomersActivity"
             android:exported="true">
-
         </activity>
-
+        <activity android:name=".CreateCustomerActivity" />
+        <activity android:name=".UpdateCustomerActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
